@@ -25,14 +25,14 @@ Aces are usually considered the highest-ranking cards.
 
 --PROGRAM:
 -User interface:
-At the start of the game, user is prompted to enter the player's names. If no names are entered Player1 and Player2 names are selected by default.
+At the start of the game, a user is prompted to enter the names of players. If no names are entered Player1 and Player2 names are selected by default.
 The program shows player's names and the number of cards held by users.
 By pressing Enter (passing empty string) program takes top cards from players decks and shows them between names.
-If War is declared program program shows cards by which war was declared, 3 each closed cards and 1 each open card.
+If War is declared, the program shows cards by which war was declared, 3 each closed cards and 1 each open card.
 Example of war scenario: Player1 19#| A###K : A###5 |23# Player2 
 When the game is over, the program shows the name of the winner.
-Card colors is not shown. 
-Full deck consists 4 each card: 2, 3, 4, 5, 6, 7, 8, 9, 10, J, Q, K, A
+Card colors are not shown. 
+The full deck consists 4 of each card: 2, 3, 4, 5, 6, 7, 8, 9, 10, J, Q, K, A
 
 -Under the hood:
 Written in OOP mostly
@@ -52,19 +52,19 @@ Main code flow:
 	|
 	ASSIGN STACKS TO PLAYERS
 	|
-	MAIN GAME LOOP----------SHOW INDEX ZERO CARDS
+	MAIN GAME LOOP----------------------------------SHOW INDEX ZERO CARDS
 	|						|
-	DECLARE THE WINNER		CHECK FOR WAR-------WAR SCENARIO
+	DECLARE THE WINNER				CHECK FOR WAR-------WAR SCENARIO
 	|						|
-	EXIT					CHECK FOR WINNER
+	EXIT						CHECK FOR WINNER
 							|
-				 			ADD PLAYED CARDS TO WINNERS STACKS END
+				 			ADD PLAYED CARDS TO WINNER'S STACKS END
 						 	|
-							REMOVE PLAEYD CARDS FROM LOOSERS STACK
+							REMOVE PLAEYD CARDS FROM LOSER'S STACK
 							|
-					       	ADD POINTS TO WINNER
-					     	|
-					     	CHECK FOR WINNER
+						       	ADD POINTS TO WINNER
+					     		|
+					     		CHECK FOR WINNER
 					     	 
     
  
