@@ -6,7 +6,7 @@ class CardsDeck:
     deck = []
 
     @classmethod
-    def populate_deck(cls):
+    def get_deck(cls):
         for card in cls.cards:
             for _ in range(4):
                 cls.deck.append(card)
@@ -32,8 +32,11 @@ class Player:
     def add_cards(self, cards_1, cards_2):
         self.stack = self.stack + cards_1 + cards_2
 
-    def is_winner():
-        ...
+    def is_winner(self):
+        if len(self.stack) == 52:
+            return True
+        else:
+            False
 
 
 class Game:
@@ -51,7 +54,7 @@ def print_table():
 
 
 # cards_deck = CardsDeck()
-# cards_deck.populate_deck()
+# cards_deck.get_deck()
 # cards_deck.shuffled()
 # print(cards_deck.deck)
 # print(cards_deck.split_deck())
